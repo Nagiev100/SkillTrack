@@ -1,0 +1,20 @@
+.Button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+
+  &.buttonSmall {
+    width: 9rem;
+    height: 5rem;
+  }
+
+  &.buttonBig {
+    width: 36rem;
+    height: 5rem;
+  }
+
+  &.defaultTheme {
+    background-color: var($blue);
+  }
+}
