@@ -4,10 +4,12 @@ export enum ButtonTheme {
     DEFAULT = 'defaultTheme',
     GRADE = 'gradeTheme',
 }
+
 export enum ButtonSize {
     SMALL = "buttonSmall",
     BIG = "buttonBig"
 }
+
 interface ButtonProps {
     id: string;
     children: ReactNode;
@@ -25,7 +27,7 @@ export const Button = memo((props: ButtonProps) => {
         theme = ButtonTheme.DEFAULT,
         disabled,
         onClick,
-        id
+        id,
     } = props;
 
     return (
