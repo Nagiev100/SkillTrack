@@ -4,7 +4,7 @@ interface InputProps {
     placeholder: string;
 }
 
-const Input = (props: InputProps) => {
+export const Input = (props: InputProps) => {
 
     const {placeholder} = props;
 
@@ -16,4 +16,3 @@ const Input = (props: InputProps) => {
         />
     )
 }
-export default Input;
