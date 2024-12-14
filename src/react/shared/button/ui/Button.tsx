@@ -1,8 +1,10 @@
 import {memo, ReactNode} from "react";
+import cls from "./Button.module.scss"
+import classNames from "classnames";
 
 export enum ButtonTheme {
-    DEFAULT = 'defaultTheme',
-    GRADE = 'gradeTheme',
+    DEFAULT_THEME = 'defaultTheme',
+    GREY_THEME = 'greyTheme',
 }
 
 export enum ButtonSize {
@@ -11,8 +13,7 @@ export enum ButtonSize {
 }
 
 interface ButtonProps {
-    id: string;
-    children: ReactNode;
+    children: string;
     size?: ButtonSize;
     theme?: ButtonTheme;
     disabled?: boolean;
@@ -24,16 +25,19 @@ export const Button = memo((props: ButtonProps) => {
     const {
         children,
         size = ButtonSize.BIG,
-        theme = ButtonTheme.DEFAULT,
+        theme = ButtonTheme.DEFAULT_THEME,
         disabled,
         onClick,
-        id,
     } = props;
 
     return (
         <button
           type={'button'}
-          id={id}
+          className={classNames(
+              cls.Button,
+              cls[theme],
+              cls[size],
+          )}
           disabled={disabled}
           onClick={onClick}
         >
