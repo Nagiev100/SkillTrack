@@ -1,4 +1,12 @@
 .InputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background-color: white;
+}
+
+.Input {
+  box-sizing: border-box;
   width: 36rem;
   max-width: 36rem;
   height: 5rem;
@@ -21,4 +29,14 @@
   &:focus::placeholder {
     color: transparent;
   }
+}
+
+.TitleInput {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  text-align: left;
+  color: #000A1A;
+  margin: 0;
+  padding: 0;
 }
