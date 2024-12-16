@@ -1,11 +1,11 @@
 import {ReactNode} from "react";
-import cls from "./form.module.scss"
+import cls from "./formWrapper.module.scss"
 
 interface FormProps {
     children: ReactNode
 }
 
-export const Form = (props: FormProps) => {
+export const FormWrapper = (props: FormProps) => {
     const {children} = props;
 
     return (
