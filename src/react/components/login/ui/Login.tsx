@@ -1,5 +1,3 @@
-import {Input} from "@/react/shared/ui/input/ui/Input";
-import {Button, ButtonSize, ButtonTheme} from "@/react/shared/ui/button/ui/Button";
 import cls from "./login.module.scss"
 import {AuthForm} from "@/react/shared/ui/authForm/ui/AuthForm";
 
