@@ -17,5 +17,4 @@ export const AuthForm = memo((props: AuthFormProps) => {
             <Button children={buttonChildren} theme={ButtonTheme.DEFAULT_THEME} size={ButtonSize.BIG}/>
         </section>
     )
-
 })
