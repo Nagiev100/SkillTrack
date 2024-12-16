@@ -1,12 +1,13 @@
 import {Input} from "@/react/shared/ui/input/ui/Input";
 import {Button, ButtonSize, ButtonTheme} from "@/react/shared/ui/button/ui/Button";
 import cls from "./authForm.module.scss"
+import {memo} from "react";
 
 interface AuthFormProps {
     buttonChildren: string;
 }
 
-export const AuthForm = (props: AuthFormProps) => {
+export const AuthForm = memo((props: AuthFormProps) => {
     const {buttonChildren} = props;
 
     return (
@@ -17,4 +18,4 @@ export const AuthForm = (props: AuthFormProps) => {
         </section>
     )
 
-}
+})

@@ -1,12 +1,13 @@
 import cls from './input.module.scss'
+import {memo} from "react";
 
 interface InputProps {
     placeholder: string;
-    title?: string;
-    type?: string
+    title: string;
+    type: string
 }
 
-export const Input = (props: InputProps) => {
+export const Input = memo((props: InputProps) => {
 
     const {placeholder, title, type} = props;
 
@@ -20,4 +21,4 @@ export const Input = (props: InputProps) => {
             />
         </article>
     )
-}
+})

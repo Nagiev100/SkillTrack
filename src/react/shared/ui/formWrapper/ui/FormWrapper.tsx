@@ -1,11 +1,11 @@
-import {ReactNode} from "react";
+import {memo, ReactNode} from "react";
 import cls from "./formWrapper.module.scss"
 
 interface FormProps {
     children: ReactNode
 }
 
-export const FormWrapper = (props: FormProps) => {
+export const FormWrapper = memo((props: FormProps) => {
     const {children} = props;
 
     return (
@@ -13,4 +13,4 @@ export const FormWrapper = (props: FormProps) => {
           {children}
       </div>
     )
-}
+})

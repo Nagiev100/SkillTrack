@@ -3,8 +3,8 @@ import cls from "./Button.module.scss"
 import classNames from "classnames";
 
 export enum ButtonTheme {
-    DEFAULT_THEME = 'defaultTheme',
-    GREY_THEME = 'greyTheme',
+    DEFAULT_THEME = "defaultTheme",
+    GREY_THEME = "greyTheme",
 }
 
 export enum ButtonSize {
