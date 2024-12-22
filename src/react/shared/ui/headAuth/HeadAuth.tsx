@@ -1,4 +1,4 @@
-import {memo} from "react";
+import { memo } from "react";
 import cls from './headAuth.module.scss'
 
 export interface HeadAuthProps {
@@ -6,13 +6,22 @@ export interface HeadAuthProps {
     caption: string;
 }
 
-export const HeadAuth = memo((props: HeadAuthProps) => {
+const markWord = (title: string, keyword: string) => {
 
-    const {title, caption} = props;
-     return (
-         <section className={cls.ContainerHeadAuth}>
-             <h1>{title}</h1>
-             <p>{caption}</p>
-         </section>
-     )
-})
+    return title.split(' ').map((word, index) =>
+        word.toLowerCase() === keyword.toLowerCase() ? (
+            <span key={index} className={cls.coloredText}>{word}</span>
+        ) : word + ' '
+    );
+};
+
+export const HeadAuth = memo((props: HeadAuthProps) => {
+    const { title, caption } = props;
+
+    return (
+        <section className={cls.ContainerHeadAuth}>
+            <h1>{markWord(title, 'team24')}</h1>
+            <p>{caption}</p>
+        </section>
+    );
+});
