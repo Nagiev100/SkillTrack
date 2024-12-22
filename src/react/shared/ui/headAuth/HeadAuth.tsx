@@ -16,6 +16,7 @@ const markWord = (title: string, keyword: string) => {
 };
 
 export const HeadAuth = memo((props: HeadAuthProps) => {
+
     const { title, caption } = props;
 
     return (
