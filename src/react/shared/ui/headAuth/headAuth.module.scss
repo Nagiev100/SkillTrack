@@ -1,0 +1,21 @@
+.ContainerHeadAuth {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  h1 {
+    font-size: 6.4rem;
+    font-weight: 600;
+    line-height: 6.4rem;
+    text-align: center;
+    color: #000A1A;
+  }
+
+  p {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    text-align: center;
+    color: #999DA3;
+  }
+}

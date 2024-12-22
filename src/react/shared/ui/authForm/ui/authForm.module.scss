@@ -1,3 +1,9 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+
 .ContainerLogout {
   display: flex;
   flex-direction: column;

@@ -6,9 +6,7 @@ import {FormWrapper} from "@/react/shared/ui/formWrapper/ui/FormWrapper";
 export function LoginContainer() {
     return(
         <section className={cls.LoginContainer}>
-            <FormWrapper>
-                <Login/>
-            </FormWrapper>
+            <Login/>
         </section>
     )
 }
