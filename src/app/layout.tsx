@@ -1,7 +1,5 @@
 import "../../public/styles/globals.scss"
 import {Manrope} from "next/font/google"
-import {Provider} from "react-redux";
-import {store} from "next/dist/build/output/store";
 
 export const metadata = {
   title: 'Next.js',
@@ -21,9 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={manrope.className}>
-      <Provider store={store}>
         {children}
-      </Provider>
       </body>
     </html>
   )
