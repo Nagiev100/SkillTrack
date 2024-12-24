@@ -2,8 +2,7 @@ import {Input} from "@/react/shared/ui/input/ui/Input";
 import {Button, ButtonSize, ButtonTheme} from "@/react/shared/ui/button/ui/Button";
 import cls from "./authForm.module.scss"
 import {memo} from "react";
-import {AuthCaption} from "@/react/shared/ui/authCaption/AuthCaption";
-import {FormWrapper} from "@/react/shared/ui/formWrapper/ui/FormWrapper";
+import {AuthCaption} from "@/react/shared/ui/authCaption/ui/AuthCaption";
 
 interface AuthFormProps {
     headTitle: string;

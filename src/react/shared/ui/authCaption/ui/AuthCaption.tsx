@@ -1,6 +1,6 @@
 import cls from './authCaption.module.scss'
 import {memo} from "react";
-import {HeadAuthProps} from "@/react/shared/ui/headAuth/HeadAuth";
+import {HeadAuthProps} from "@/react/shared/ui/headAuth/ui/HeadAuth";
 
 interface AuthCaptionProps extends Pick<HeadAuthProps, 'title' | 'caption'> {}
 

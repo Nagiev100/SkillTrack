@@ -1,7 +1,7 @@
 import cls from "./login.module.scss"
 import {AuthForm} from "@/react/shared/ui/authForm/ui/AuthForm";
 import {InputEnums} from "@/react/components/login/helpers/inputEnums";
-import {HeadAuth} from "@/react/shared/ui/headAuth/HeadAuth";
+import {HeadAuth} from "@/react/shared/ui/headAuth/ui/HeadAuth";
 import {FormWrapper} from "@/react/shared/ui/formWrapper/ui/FormWrapper";
 
 export const Login = () => {
